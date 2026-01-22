@@ -1,0 +1,172 @@
+{
+  "Navbar": {
+    "home": "Ana səhifə",
+    "services": "Xidmətlər",
+    "contact": "Əlaqə",
+    "language": "Dil",
+    "address": "Məhəmməd hadi 142A",
+    "consultation": "Məsləhət üçün yazılın",
+    "consultationMessage": "Salam, məsləhət üçün müraciət etmək istəyirəm",
+    "availability": "24/7"
+  },
+  "Hero": {
+    "title": "Həyatı Allahın mərhəməti ilə yad edirik",
+    "description": "Hər bir həyat Uca Yaradanın bir əmanətidir və ehtiramla yad edilməyə layiqdir. Bu ağır anda dua, mərhəmət və peşəkar qayğı ilə yanınızdayıq.",
+    "services": "Xidmətlər",
+    "consultation": "Əlaqə saxlayın"
+  },
+  "AboutUs": {
+    "title": "Haqqımızda",
+    "description_p1": "Dəfn mərasimləri uzun illərdir ki, xalqımızın milli ənənələrindən biridir. Uzun illərin təcrübəsinə əsaslanaraq, şirkətimiz yas mərasimlərini yüksək səviyyədə, adət-ənənələrə və inanca hörmətlə təşkil edir.",
+    "description_p2": "Biz bu sahədə fəaliyyət göstərən ilk özəl şirkətlərdənik və 2010-cu ildən Azərbaycanda uğurla işləyirik. Dəfn xidmətləri göstərməklə yanaşı, MDB ölkələri və uzaq xarici ölkələrlə əməkdaşlıq edirik və bütün mərhələlərdə tam dəstək təmin edirik.",
+    "description_p3": "Veb-proyektimizin əsas məqsədi belə çətin günlərdə həmvətənlərimizi tək qoymamaqdır. Biz mərhumların vətəninə ucuz daşınmasını, dəfn və yad mərasimlərinin ləyaqətlə təşkilini təmin edirik. Həmçinin Azərbaycanda vəfat etmiş xarici vətəndaşların sənədləşdirilməsi və repatriasiyasını həyata keçiririk.",
+    "description_p4": "Biz Bakıda hər büdcəyə uyğun dəfn xidmətləri təklif edirik, münasib qiymətlərlə yüksək keyfiyyətli xidmət göstəririk."
+  },
+  "Services": {
+    "title": "Xidmətlər",
+    "description": "Bizim xidmətlərimiz haqqında məlumatlar",
+    "showMore": "Ətraflı",
+    "loading": "Xidmətlər yüklənir...",
+    "error": "Xəta",
+    "noServices": "Heç bir xidmət mövcud deyil."
+  },
+  "ServicesPage": {
+    "title": "Bizim Xidmətlər",
+    "subtitle": "Peşəkar və şəfqətli ritual xidmətləri",
+    "description": "Biz bu çətin dövrlərdə ailələrə tam dəstək göstərərək, ən yüksək səviyyədə ritual xidmətləri təqdim edirik. Hər bir xidmət diqqətlə və hörmətlə yerinə yetirilir.",
+    "error": "Xidmətləri yükləyərkən xəta baş verdi",
+    "noServices": "Hal-hazırda heç bir xidmət mövcud deyil",
+    "breadcrumb": {
+      "home": "Ana səhifə",
+      "services": "Xidmətlər"
+    },
+    "cta": {
+      "title": "Kömək lazımdır?",
+      "description": "Xidmətlərimiz haqqında ətraflı məlumat almaq və ya sual vermək üçün bizimlə əlaqə saxlayın.",
+      "button": "Bizimlə Əlaqə Saxlayın"
+    }
+  },
+  "ServicePage": {
+    "footer": {
+      "title": "Əlaqə saxlayın",
+      "description": "Bu xidmət haqqında ətraflı məlumat almaq üçün bizimlə əlaqə saxlayın",
+      "button": "Əlaqə"
+    }
+  },
+  "ContactPage": {
+    "title": "Bizimlə Əlaqə Saxlayın",
+    "subtitle": "Buradayıq ki, sizə kömək edək",
+    "description": "Hər hansı sualınız varsa və ya kömək lazımdırsa, bizimlə əlaqə saxlamaqdan çəkinməyin. Komandamız sizə 24/7 kömək göstərmək üçün hazırdır.",
+    "contactInfo": {
+      "title": "Əlaqə Məlumatları",
+      "address": {
+        "title": "Ünvan",
+        "line1": "Məhəmməd hadi 142A",
+        "line2": "KFC-nin arxası",
+        "line3": "Bakı, Azərbaycan"
+      },
+      "phone": {
+        "title": "Bizə zəng edin",
+        "number": "+994 99 366 63 66",
+        "availability": "24/7 əlçatandır"
+      },
+      "email": {
+        "title": "Poçt",
+        "address": "info@ritualnieuslugibaku.com",
+        "response": "24 saat ərzində cavab veririk"
+      }
+    },
+    "workingHours": {
+      "title": "İş Saatları",
+      "allDay": "Həftənin 7 günü",
+      "availability": "24 saat xidmət"
+    },
+    "map": {
+      "title": "Xəritədə Bizi Tapın",
+      "heading": "Baş Ofis Məhəmməd hadi 142A"
+    },
+    "form": {
+      "fullName": {
+        "label": "Tam Ad",
+        "placeholder": "Adınız"
+      },
+      "role": {
+        "label": "Münasibətiniz",
+        "placeholder": "Zəhmət olmasa seçin",
+        "options": {
+          "family": "Ailə üzvü",
+          "friend": "Dost",
+          "organization": "Təşkilat",
+          "other": "Digər"
+        }
+      },
+      "email": {
+        "label": "Elektron Poçt",
+        "placeholder": "Email"
+      },
+      "serviceType": {
+        "label": "Xidmət Növü",
+        "placeholder": "Zəhmət olmasa seçin",
+        "options": {
+          "full": "Tam dəfn xidməti",
+          "burial": "Dəfn xidməti",
+          "cremation": "Kremasiya xidməti",
+          "memorial": "Yad mərasimi",
+          "transportation": "Daşınma xidməti",
+          "other": "Digər"
+        }
+      },
+      "date": {
+        "label": "Xidmət Tarixi",
+        "placeholder": "Tarix seçin"
+      },
+      "budget": {
+        "label": "Büdcə",
+        "placeholder": "Zəhmət olmasa seçin",
+        "options": {
+          "basic": "Əsas paket",
+          "standard": "Standart paket",
+          "premium": "Premium paket",
+          "custom": "Fərdi (məsləhət lazımdır)"
+        }
+      },
+      "message": {
+        "label": "Əlavə Məlumat",
+        "placeholder": "Zəhmət olmasa əlavə məlumat yazın..."
+      },
+      "required": "MƏCBURI",
+      "optional": "İXTİYARİ",
+      "submit": "Sorğu Göndər",
+      "submitting": "Göndərilir...",
+      "successMessage": "Təşəkkür edirik! Sorğunuz göndərildi. Tezliklə sizinlə əlaqə saxlayacağıq.",
+      "errorMessage": "Bir xəta baş verdi. Zəhmət olmasa yenidən cəhd edin və ya birbaşa zəng edin."
+    }
+  },
+  "Footer": {
+    "title": "Ritual xidmətlər",
+    "subtitle": "Baki, Rusiya, Ukraina",
+    "description": "Məlum olduğu kimi, dəfn mərasimləri xalqımızın milli ənənələrindən biridir. Şirkətimiz illərin təcrübəsi ilə onları yüksək səviyyədə təşkil edir…",
+    "workingHours": {
+      "title": "İş vaxti",
+      "schedule": "B.E-C",
+      "availability": "24/7"
+    },
+    "map": {
+      "title": "Xəritə",
+      "home": "Ana səhifə",
+      "services": "Xidmətlər",
+      "contact": "Əlaqə"
+    },
+    "contact": {
+      "title": "Əlaqə",
+      "addressTitle": "Ünvan",
+      "mainOffice": "Baş ofis Məhəmməd hadi 142A",
+      "landmarkTitle": "İstiqamət",
+      "landmark": "KFC-nin arxası",
+      "phoneTitle": "Telefon",
+      "phone": "+994 99 366 63 66",
+      "emailTitle": "Email",
+      "email": "info@ritualnieuslugibaku.com"
+    }
+  }
+}

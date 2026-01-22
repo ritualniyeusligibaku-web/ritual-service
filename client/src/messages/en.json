@@ -1,0 +1,172 @@
+{
+  "Navbar": {
+    "home": "Home",
+    "services": "Services",
+    "contact": "Contact",
+    "language": "Language",
+    "address": "Mahammad Hadi 142A",
+    "consultation": "Schedule Consultation",
+    "consultationMessage": "Hello, I want to schedule a consultation",
+    "availability": "24/7"
+  },
+  "Hero": {
+    "title": "Honoring life with prayer and God’s grace",
+    "description": "Every life is a gift from the Almighty and deserves to be honored. In this difficult time, we are beside you with prayer, compassion, and professional care.",
+    "services": "Services",
+    "consultation": "Consultation"
+  },
+  "AboutUs": {
+    "title": "About Us",
+    "description_p1": "Funeral ceremonies have long been one of the national traditions of our people. Drawing on years of experience, our company organizes memorial services at the highest level, with respect for customs and faith.",
+    "description_p2": "We are one of the first private companies in this field and have been successfully operating in Azerbaijan since 2010. In addition to providing funeral services, we cooperate with CIS countries and beyond, offering full support at every stage.",
+    "description_p3": "The main goal of our web project is to ensure that our compatriots are not left alone during such difficult times. We assist with affordable transportation of the deceased to their homeland, organization of funerals and memorial ceremonies with dignity, and also handle documentation and repatriation of foreign citizens who have passed away in Azerbaijan.",
+    "description_p4": "We offer funeral services in Baku for every budget, combining affordable prices with high-quality service."
+  },
+  "Services": {
+    "title": "Services",
+    "description": "Information about our services",
+    "showMore": "Show More",
+    "loading": "Loading services...",
+    "error": "Error",
+    "noServices": "No services available."
+  },
+  "ServicesPage": {
+    "title": "Our Services",
+    "subtitle": "Professional and compassionate funeral services",
+    "description": "We provide the highest level of funeral services, offering complete support to families during these difficult times. Each service is performed with care and respect.",
+    "error": "An error occurred while loading services",
+    "noServices": "No services are currently available",
+    "breadcrumb": {
+      "home": "Home",
+      "services": "Services"
+    },
+    "cta": {
+      "title": "Need Assistance?",
+      "description": "Contact us for more information about our services or to ask any questions.",
+      "button": "Get in Touch"
+    }
+  },
+  "ServicePage": {
+    "footer": {
+      "title": "Get in Touch",
+      "description": "Contact us for more information about this service",
+      "button": "Contact"
+    }
+  },
+  "ContactPage": {
+    "title": "Get in Touch",
+    "subtitle": "We're here to help you",
+    "description": "If you have any questions or need assistance, please don't hesitate to contact us. Our team is available 24/7 to support you.",
+    "contactInfo": {
+      "title": "Contact Information",
+      "address": {
+        "title": "Address",
+        "line1": "Mahammad Hadi 142A",
+        "line2": "Behind KFC",
+        "line3": "Baku, Azerbaijan"
+      },
+      "phone": {
+        "title": "Call Us",
+        "number": "+994 99 366 63 66",
+        "availability": "Available 24/7"
+      },
+      "email": {
+        "title": "Email",
+        "address": "info@ritualnieuslugibaku.com",
+        "response": "We respond within 24 hours"
+      }
+    },
+    "workingHours": {
+      "title": "Working Hours",
+      "allDay": "7 days a week",
+      "availability": "24-hour service"
+    },
+    "map": {
+      "title": "Find Us on Map",
+      "heading": "Main Office Mahammad Hadi 142A"
+    },
+    "form": {
+      "fullName": {
+        "label": "Full Name",
+        "placeholder": "Your name"
+      },
+      "role": {
+        "label": "Your Relationship",
+        "placeholder": "Please select",
+        "options": {
+          "family": "Family Member",
+          "friend": "Friend",
+          "organization": "Organization",
+          "other": "Other"
+        }
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "Email"
+      },
+      "serviceType": {
+        "label": "Service Type",
+        "placeholder": "Please select",
+        "options": {
+          "full": "Full Funeral Service",
+          "burial": "Burial Service",
+          "cremation": "Cremation Service",
+          "memorial": "Memorial Service",
+          "transportation": "Transportation Service",
+          "other": "Other"
+        }
+      },
+      "date": {
+        "label": "Service Date",
+        "placeholder": "Select date"
+      },
+      "budget": {
+        "label": "Budget",
+        "placeholder": "Please select",
+        "options": {
+          "basic": "Basic Package",
+          "standard": "Standard Package",
+          "premium": "Premium Package",
+          "custom": "Custom (I need consultation)"
+        }
+      },
+      "message": {
+        "label": "Additional Information",
+        "placeholder": "Please share any additional details..."
+      },
+      "required": "REQUIRED",
+      "optional": "OPTIONAL",
+      "submit": "Send Request",
+      "submitting": "Sending...",
+      "successMessage": "Thank you! Your request has been submitted. We will contact you shortly.",
+      "errorMessage": "Something went wrong. Please try again or call us directly."
+    }
+  },
+  "Footer": {
+    "title": "Ritual services",
+    "subtitle": "Baku, Russia, Ukraine",
+    "description": "As is well known, funeral ceremonies are one of the national traditions of our people. Our company organizes them at the highest level thanks to years of experience…",
+    "workingHours": {
+      "title": "Working Hours",
+      "schedule": "Mon-Sun",
+      "availability": "24/7"
+    },
+    "map": {
+      "title": "Site Map",
+      "home": "Home",
+      "services": "Services",
+      "contact": "Contact"
+    },
+    "contact": {
+      "title": "Contact",
+      "addressTitle": "Address",
+      "mainOffice": "Main office Mahammad Hadi 142A",
+      "landmarkTitle": "Landmark",
+      "landmark": "Behind KFC",
+      "phoneTitle": "Phone",
+      "phone": "+994 99 366 63 66",
+      "emailTitle": "Email",
+      "email": "info@ritualnieuslugibaku.com"
+    }
+  }
+}

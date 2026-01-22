@@ -1,0 +1,14 @@
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Disallow admin pages
+User-agent: *
+Disallow: /admin/
+Disallow: /api/
+
+# Sitemap location
+Sitemap: https://ritualnieuslugibaku.com/sitemap.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
