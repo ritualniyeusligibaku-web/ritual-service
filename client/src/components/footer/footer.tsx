@@ -9,7 +9,7 @@ export default function Footer() {
   const [open, setOpen] = useState(false);
 
   return (
-    <footer className="bg-[#1a1a1a] text-white border-t border-gray-800">
+    <footer className="bg-[#565656] text-white border-t border-gray-800">
       <div className="max-w-7xl mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-12">
           {/* Left Section - About */}

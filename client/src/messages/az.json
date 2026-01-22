@@ -47,6 +47,10 @@
     }
   },
   "ServicePage": {
+    "breadcrumb": {
+      "home": "Ana səhifə",
+      "services": "Xidmətlər"
+    },
     "footer": {
       "title": "Əlaqə saxlayın",
       "description": "Bu xidmət haqqında ətraflı məlumat almaq üçün bizimlə əlaqə saxlayın",

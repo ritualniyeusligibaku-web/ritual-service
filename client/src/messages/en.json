@@ -47,6 +47,10 @@
     }
   },
   "ServicePage": {
+    "breadcrumb": {
+      "home": "Home",
+      "services": "Services"
+    },
     "footer": {
       "title": "Get in Touch",
       "description": "Contact us for more information about this service",

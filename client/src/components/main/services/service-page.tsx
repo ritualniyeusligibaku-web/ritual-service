@@ -7,6 +7,8 @@ import { useParams } from "next/navigation";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Link from "next/link";
+import { ChevronRight } from "lucide-react";
 
 // Register GSAP plugins
 if (typeof window !== "undefined") {
@@ -104,9 +106,30 @@ export default function ServicePage({ service }: ServicePageProps) {
     <div className="min-h-screen bg-white">
       {/* Two Column Layout */}
       <div className="flex flex-col lg:flex-row min-h-screen">
+        
         {/* Left Side - Scrollable Content */}
         <div className="w-full lg:w-1/2 overflow-y-auto">
           <div ref={contentRef} className="px-8 md:px-12 lg:px-16 xl:px-24 py-20 lg:py-32">
+            {/* Breadcrumb */}
+            <nav className="flex items-center gap-2 text-sm text-gray-500 mb-8">
+              <Link 
+                href={`/${locale}`}
+                className="hover:text-gray-900 transition-colors"
+              >
+                {t("breadcrumb.home")}
+              </Link>
+              <ChevronRight className="w-4 h-4" />
+              <Link 
+                href={`/${locale}/services`}
+                className="hover:text-gray-900 transition-colors"
+              >
+                {t("breadcrumb.services")}
+              </Link>
+              <ChevronRight className="w-4 h-4" />
+              <span className="text-gray-900 font-medium">
+                {service.name[locale]}
+              </span>
+            </nav>
             {/* Location */}
             <p className="animate-content text-sm uppercase tracking-[0.3em] text-gray-500 mb-8 font-light">
               BAKU, AZERBAIJAN
