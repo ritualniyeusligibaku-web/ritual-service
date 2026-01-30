@@ -19,8 +19,8 @@ const allowedOrigins = [
   "http://38.242.129.161:3000",
   "http://ritualnieuslugibaku.com",
   "https://www.ritualnieuslugibaku.com",
-  process.env.CLIENT_URL, // Add production client URL from env
-].filter(Boolean); // Remove any undefined values
+  process.env.CLIENT_URL, 
+].filter(Boolean); 
 
 const corsOptions = {
   origin: function (origin, callback) {

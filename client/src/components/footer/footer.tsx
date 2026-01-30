@@ -25,6 +25,7 @@ export default function Footer() {
             </p>
           </div>
 
+
           {/* Middle Section 1 - Working Hours */}
           <div>
             <h3 className="font-heading text-lg text-white mb-6 border-b border-gray-700 pb-2">
