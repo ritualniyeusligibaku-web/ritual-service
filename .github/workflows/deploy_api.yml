@@ -1,0 +1,51 @@
+name: Backend Deploy
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'server/**'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Deploy to server
+        run: |
+          # ---------- SSH SETUP ----------
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" | base64 -d > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan -H ${{ secrets.SERVER_HOST }} >> ~/.ssh/known_hosts
+
+          # ---------- CREATE DIR ----------
+          ssh ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} \
+            "mkdir -p /usr/ritual/server"
+
+          # ---------- UPLOAD SOURCE ----------
+          rsync -avz --delete server/ \
+            --exclude node_modules \
+            --exclude logs \
+            --exclude .env \
+            ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}:/usr/ritual/server/
+
+          # ---------- INSTALL & RESTART ----------
+          ssh ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} "
+            cd /usr/ritual/server &&
+            npm ci --only=production &&
+            cp /usr/ritual/.env.back .env &&
+            pm2 stop ritual-backend || true &&
+            pm2 delete ritual-backend || true &&
+            pm2 start ecosystem.config.js &&
+            pm2 save
+          "

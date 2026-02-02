@@ -1,0 +1,61 @@
+name: Client Deploy
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'client/**'   # only run when files inside /client change
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install deps
+        working-directory: ./client
+        run: npm ci
+
+      - name: Lint
+        working-directory: ./client
+        run: npm run lint
+
+      - name: Build
+        working-directory: ./client
+        run: npm run build
+
+      - name: Deploy to server
+        run: |
+          # Setup SSH
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" | base64 -d > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan -H ${{ secrets.SERVER_HOST }} >> ~/.ssh/known_hosts
+
+          # Create folder on server
+          ssh ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} "mkdir -p /usr/ritual/client"
+
+          # Upload build artifacts + dependencies + next.config.ts
+          rsync -avz --delete client/.next/ ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}:/usr/ritual/client/.next/
+          rsync -avz client/package.json client/package-lock.json ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}:/usr/ritual/client/
+          rsync -avz client/next.config.ts ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}:/usr/ritual/client/next.config.ts || true
+          rsync -avz client/public/ ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}:/usr/ritual/client/public/ || true
+          rsync -avz client/.env ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}:/usr/ritual/client/ || true
+
+          # Install production deps, restart PM2
+          ssh ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} "
+            cd /usr/ritual/client &&
+            npm ci --only=production &&
+            pm2 stop ritual-front || true &&
+            pm2 delete ritual-front || true &&
+            pm2 start npm --name ritual-front -- start &&
+            pm2 save
+          "
