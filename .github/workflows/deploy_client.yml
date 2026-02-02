@@ -8,6 +8,7 @@ on:
       - 'client/**'   # only run when files inside /client change
 
 jobs:
+
   build-deploy:
     runs-on: ubuntu-latest
 
