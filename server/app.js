@@ -8,35 +8,35 @@ const app = express();
 
 const PORT = process.env.PORT || 5555;
 
-// Connect to database
+// Connect to database!
 db();
 
 // CORS Configuration
 const allowedOrigins = [
-  'http://localhost:3000',
-  'http://localhost:3001',
+  "http://localhost:3000",
+  "http://localhost:3001",
   "https://ritualnieuslugibaku.com",
   "http://38.242.129.161:3000",
   "http://ritualnieuslugibaku.com",
   "https://www.ritualnieuslugibaku.com",
-  process.env.CLIENT_URL, 
-].filter(Boolean); 
+  process.env.CLIENT_URL,
+].filter(Boolean);
 
 const corsOptions = {
   origin: function (origin, callback) {
     // Allow requests with no origin (like mobile apps, Postman, or curl)
     if (!origin) return callback(null, true);
-    
+
     if (allowedOrigins.indexOf(origin) !== -1) {
       callback(null, true);
     } else {
-      callback(new Error('Not allowed by CORS'));
+      callback(new Error("Not allowed by CORS"));
     }
   },
   credentials: true, // Allow cookies and authorization headers
   optionsSuccessStatus: 200,
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
+  methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization", "X-Requested-With"],
 };
 
 // Middleware
