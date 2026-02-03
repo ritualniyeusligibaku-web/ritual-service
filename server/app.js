@@ -16,6 +16,7 @@ const allowedOrigins = [
   "http://localhost:3000",
   "http://localhost:3001",
   "https://ritualnieuslugibaku.com",
+  "https://ritualservice.org",
   "http://38.242.129.161:3000",
   "http://ritualnieuslugibaku.com",
   "https://www.ritualnieuslugibaku.com",
