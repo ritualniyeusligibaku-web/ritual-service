@@ -66,7 +66,7 @@ export default function Navbar() {
             ))}
           </div>
           <Link href="/">
-            <Image src="/logo.png" alt="logo" width={140} height={100} />
+            <Image src="/logo.png" alt="logo" width={180} height={100} />
           </Link>
           <div className="flex gap-[31px] items-center">
             {rightNavigationItems.map((item) => (
