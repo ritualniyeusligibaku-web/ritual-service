@@ -24,14 +24,14 @@
   },
   "Services": {
     "title": "Xidmətlər",
-    "description": "Bizim xidmətlərimiz haqqında məlumatlar",
+    "description": "Ritual Xidmət imiz haqqında məlumatlar",
     "showMore": "Ətraflı",
     "loading": "Xidmətlər yüklənir...",
     "error": "Xəta",
     "noServices": "Heç bir xidmət mövcud deyil."
   },
   "ServicesPage": {
-    "title": "Bizim Xidmətlər",
+    "title": "Ritual Xidmət ",
     "subtitle": "Peşəkar və şəfqətli ritual xidmətləri",
     "description": "Biz bu çətin dövrlərdə ailələrə tam dəstək göstərərək, ən yüksək səviyyədə ritual xidmətləri təqdim edirik. Hər bir xidmət diqqətlə və hörmətlə yerinə yetirilir.",
     "error": "Xidmətləri yükləyərkən xəta baş verdi",

@@ -22,7 +22,7 @@ export async function generateMetadata({
   const titles = {
     en: "Our Funeral Services | Ritual Service Baku",
     ru: "Наши ритуальные услуги | Похоронные услуги Баку",
-    az: "Bizim xidmətlərimiz | Ritual Xidmət Bakı",
+    az: "Ritual Xidmət imiz | Ritual Xidmət Bakı",
   };
 
   const descriptions = {
@@ -78,7 +78,7 @@ export default async function ServicesPage({ params }: ServicesPageProps) {
               <div className="bg-black flex flex-col items-start justify-center min-h-auto md:min-h-[300px]">
                 <div className="w-full px-6 pt-6">
                   <nav className="flex items-center gap-2 text-sm text-gray-300">
-                    <Link 
+                    <Link
                       href={`/${locale}`}
                       className="hover:text-white transition-colors"
                     >
@@ -96,7 +96,6 @@ export default async function ServicesPage({ params }: ServicesPageProps) {
                 </h1>
               </div>
               <div className="flex flex-col p-4 items-center justify-center min-h-auto md:min-h-[300px]">
-
                 <p className="text-xl md:text-2xl font-sans text-gray-700 mb-6 font-normal">
                   {t("subtitle")}
                 </p>
@@ -109,7 +108,6 @@ export default async function ServicesPage({ params }: ServicesPageProps) {
                 </p>
               </div>
             </div>
-
           </div>
           {/* Services Grid */}
           {error ? (
