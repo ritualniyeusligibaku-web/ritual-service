@@ -3,8 +3,12 @@ import apiServices from "@/src/services/api.services";
 import { Service } from "@/types/services.types";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = "https://ritualnieuslugibaku.com";
+  // ✅ ГЛАВНОЕ ИСПРАВЛЕНИЕ — ДОМЕН
+  const baseUrl = "https://ritualservice.org";
+
   const locales = ["en", "ru", "az"];
+
+  const now = new Date(); // чтобы не создавать new Date() 100 раз
 
   // Static pages
   const staticPages: MetadataRoute.Sitemap = [];
@@ -14,7 +18,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     staticPages.push(
       {
         url: `${baseUrl}/${locale}`,
-        lastModified: new Date(),
+        lastModified: now,
         changeFrequency: "weekly",
         priority: 1.0,
         alternates: {
@@ -27,7 +31,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       },
       {
         url: `${baseUrl}/${locale}/services`,
-        lastModified: new Date(),
+        lastModified: now,
         changeFrequency: "weekly",
         priority: 0.9,
         alternates: {
@@ -40,7 +44,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       },
       {
         url: `${baseUrl}/${locale}/contact`,
-        lastModified: new Date(),
+        lastModified: now,
         changeFrequency: "monthly",
         priority: 0.8,
         alternates: {
@@ -50,7 +54,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
             az: `${baseUrl}/az/contact`,
           },
         },
-      }
+      },
     );
   });
 
@@ -62,7 +66,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       (service: Service) =>
         locales.map((locale) => ({
           url: `${baseUrl}/${locale}/services/${service.slug}`,
-          lastModified: new Date(),
+          lastModified: now,
           changeFrequency: "weekly" as const,
           priority: 0.7,
           alternates: {
@@ -72,7 +76,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
               az: `${baseUrl}/az/services/${service.slug}`,
             },
           },
-        }))
+        })),
     );
 
     return [...staticPages, ...servicePages];
