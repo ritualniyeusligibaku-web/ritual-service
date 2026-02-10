@@ -21,6 +21,6 @@ export default function robots(): MetadataRoute.Robots {
         crawlDelay: 0,
       },
     ],
-    sitemap: "https://ritualnieuslugibaku.com/sitemap.xml",
+    sitemap: "https://ritualservice.org/sitemap.xml",
   };
 }

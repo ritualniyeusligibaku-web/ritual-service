@@ -35,7 +35,7 @@ export async function generateMetadata({
       title: titles[locale as keyof typeof titles] || titles.en,
       description:
         descriptions[locale as keyof typeof descriptions] || descriptions.en,
-      url: `https://ritualnieuslugibaku.com/${locale}/contact`,
+      url: `https://ritualservice.org/${locale}/contact`,
       type: "website",
     },
   };
@@ -50,12 +50,12 @@ export default async function ContactPage({ params }: ContactPageProps) {
     "@type": "ContactPage",
     name: "Contact Ritual Service",
     description: t("description"),
-    url: `https://ritualnieuslugibaku.com/${locale}/contact`,
+    url: `https://ritualservice.org/${locale}/contact`,
     mainEntity: {
       "@type": "FuneralHome",
       name: "Ritual Service",
       telephone: "+994 99 366 63 66",
-      email: "info@ritualnieuslugibaku.com",
+      email: "info@ritualservice.org",
       address: {
         "@type": "PostalAddress",
         streetAddress: "Mahammad Hadi 142A",
@@ -136,8 +136,6 @@ export default async function ContactPage({ params }: ContactPageProps) {
             </div>
           </div>
         </section>
-
-
       </div>
     </>
   );

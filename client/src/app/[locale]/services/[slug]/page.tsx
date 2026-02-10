@@ -28,8 +28,11 @@ export async function generateMetadata({
       };
     }
 
-    const title = service.name[locale as keyof typeof service.name] || service.name.en;
-    const description = service.description[locale as keyof typeof service.description] || service.description.en;
+    const title =
+      service.name[locale as keyof typeof service.name] || service.name.en;
+    const description =
+      service.description[locale as keyof typeof service.description] ||
+      service.description.en;
 
     return {
       title: `${title} | Ritual Service Baku`,
@@ -44,7 +47,7 @@ export async function generateMetadata({
       openGraph: {
         title: `${title} | Ritual Service`,
         description: description,
-        url: `https://ritualnieuslugibaku.com/${locale}/services/${slug}`,
+        url: `https://ritualservice.org/${locale}/services/${slug}`,
         type: "website",
         images: [
           {
@@ -71,14 +74,16 @@ export async function generateMetadata({
   }
 }
 
-export default async function ServiceDetailPage({ params }: ServiceDetailPageProps) {
+export default async function ServiceDetailPage({
+  params,
+}: ServiceDetailPageProps) {
   const { slug, locale } = await params;
 
   let service;
-  
+
   try {
     service = await apiServices.getServiceBySlug(slug);
-    
+
     if (!service) {
       console.warn(`Service not found for slug: ${slug}`);
       notFound();
@@ -88,8 +93,11 @@ export default async function ServiceDetailPage({ params }: ServiceDetailPagePro
     notFound();
   }
 
-  const serviceName = service.name[locale as keyof typeof service.name] || service.name.en;
-  const serviceDescription = service.description[locale as keyof typeof service.description] || service.description.en;
+  const serviceName =
+    service.name[locale as keyof typeof service.name] || service.name.en;
+  const serviceDescription =
+    service.description[locale as keyof typeof service.description] ||
+    service.description.en;
 
   const serviceSchema = getServiceSchema({
     name: serviceName,
@@ -125,18 +133,18 @@ export async function generateStaticParams() {
   try {
     const services = await apiServices.getAllServices();
     if (!services || !Array.isArray(services)) {
-      console.warn('No services returned from API');
+      console.warn("No services returned from API");
       return [];
     }
     return services.map((service: Service) => ({
       slug: service.slug,
     }));
   } catch (error) {
-    console.error('Error generating static params:', error);
+    console.error("Error generating static params:", error);
     return [];
   }
 }
 
 // Enable dynamic rendering with revalidation
-export const dynamic = 'force-dynamic';
+export const dynamic = "force-dynamic";
 export const revalidate = 60; // Revalidate every minute

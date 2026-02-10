@@ -38,11 +38,11 @@ export async function generateMetadata({
       descriptions[locale as keyof typeof descriptions] || descriptions.en,
 
     alternates: {
-      canonical: `https://ritualnieuslugibaku.com/${locale}`,
+      canonical: `https://ritualservice.org/${locale}`,
       languages: {
-        ru: "https://ritualnieuslugibaku.com/ru",
-        az: "https://ritualnieuslugibaku.com/az",
-        en: "https://ritualnieuslugibaku.com/en",
+        ru: "https://ritualservice.org/ru",
+        az: "https://ritualservice.org/az",
+        en: "https://ritualservice.org/en",
       },
     },
   };
@@ -60,7 +60,7 @@ export default async function LocaleLayout({
   }
 
   const funeralHomeSchema = getFuneralHomeSchemaByLocale(
-    locale as "en" | "ru" | "az"
+    locale as "en" | "ru" | "az",
   );
 
   return (

@@ -38,7 +38,7 @@ export async function generateMetadata({
       title: titles[locale as keyof typeof titles] || titles.en,
       description:
         descriptions[locale as keyof typeof descriptions] || descriptions.en,
-      url: `https://ritualnieuslugibaku.com/${locale}`,
+      url: `https://ritualservice.org/${locale}`,
       type: "website",
     },
   };

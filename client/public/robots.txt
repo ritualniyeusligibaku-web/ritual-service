@@ -8,7 +8,7 @@ Disallow: /admin/
 Disallow: /api/
 
 # Sitemap location
-Sitemap: https://ritualnieuslugibaku.com/sitemap.xml
+Sitemap: https://ritualservice.org/sitemap.xml
 
 # Crawl-delay for polite crawling
 Crawl-delay: 1

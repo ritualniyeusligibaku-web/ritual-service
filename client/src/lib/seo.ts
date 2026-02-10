@@ -7,10 +7,10 @@ export const siteConfig = {
     ru: "Профессиональные ритуальные и похоронные услуги в Баку, Азербайджан. Доступно 24/7. Предоставляем достойные похоронные услуги в Азербайджане, странах СНГ и за рубежом с 2010 года.",
     az: "Bakıda professional dəfn və ritual xidmətləri, Azərbaycan. 24/7 əlçatandır. 2010-cu ildən Azərbaycan, MDB ölkələri və digər ölkələrdə ləyaqətli dəfn xidmətləri göstəririk.",
   },
-  url: "https://ritualnieuslugibaku.com",
+  url: "https://ritualservice.org",
   ogImage: "/og-image.jpg",
   phone: "+994 50 662 44 88",
-  email: "info@ritualnieuslugibaku.com",
+  email: "info@ritualservice.org",
   address: {
     street: "Mahammad Hadi 142A",
     city: "Baku",
@@ -113,7 +113,7 @@ export const funeralHomeSchemaByLocale = {
     "@context": "https://schema.org",
     "@type": "FuneralHome",
     name: "Ритуальные услуги в Баку",
-    url: "https://ritualnieuslugibaku.com/ru",
+    url: "https://ritualservice.org/ru",
     description:
       "Ритуальные и похоронные услуги в Баку и по всему Азербайджану. Организация похорон, кремация, мемориальные услуги, транспортировка и международная репатриация тел умерших.",
     areaServed: {
@@ -153,7 +153,7 @@ export const funeralHomeSchemaByLocale = {
     "@context": "https://schema.org",
     "@type": "FuneralHome",
     name: "Bakıda dəfn və mərasim xidmətləri",
-    url: "https://ritualnieuslugibaku.com/az",
+    url: "https://ritualservice.org/az",
     description:
       "Bakıda və Azərbaycanın bütün bölgələrində dəfn və mərasim xidmətləri. Dəfnin təşkili, kremasiya, xatirə mərasimləri, mərhumların daşınması və beynəlxalq repatriasiya.",
     areaServed: {
@@ -193,7 +193,7 @@ export const funeralHomeSchemaByLocale = {
     "@context": "https://schema.org",
     "@type": "FuneralHome",
     name: "Funeral Services in Baku",
-    url: "https://ritualnieuslugibaku.com/en",
+    url: "https://ritualservice.org/en",
     description:
       "Professional funeral services in Baku and across Azerbaijan. Funeral arrangement, cremation, memorial services, body transportation and international repatriation.",
     areaServed: {

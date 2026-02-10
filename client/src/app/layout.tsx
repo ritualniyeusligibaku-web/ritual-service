@@ -1,5 +1,9 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Cormorant_Garamond, Geologica } from "next/font/google";
+import {
+  Playfair_Display,
+  Cormorant_Garamond,
+  Geologica,
+} from "next/font/google";
 import localFont from "next/font/local";
 import { Toaster } from "react-hot-toast";
 import "./globals.css";
@@ -92,7 +96,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://ritualnieuslugibaku.com",
+    url: "https://ritualservice.org",
     siteName: "Ritual Service",
     title: "Ritual Service - Professional Funeral Services in Baku, Azerbaijan",
     description:
