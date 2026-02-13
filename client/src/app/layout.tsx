@@ -70,7 +70,7 @@ const geologica = Geologica({
 export const metadata: Metadata = {
   metadataBase: new URL('https://ritualservice.org'),
   title: {
-    default: "Ritual Service: Похоронные услуги - Профессиональные ритуальные услуги в Баку",
+    default: "Ритуальные услуги: Похоронные услуги - Профессиональные ритуальные услуги в Баку",
     template: "%s | Ritual Service",
   },
   description:
